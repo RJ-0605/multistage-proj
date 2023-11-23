@@ -1,0 +1,41 @@
+Please start with the "Multistage Workshop", then continue with the "Hello Java" exercise.
+
+Hello Java Instructions
+=======================
+In this exercise you will practice some Java usage basics and create a multi-stage build.
+
+hello-java is a simple program that writes to the console.
+In order to build it you will need the maven build tool and the Java Development Kit version 8 (JDK8). The official maven docker image has both.
+In order to execute it you will only need a Java Runtime Environment (JRE). Note that this specific program insists on running in a clean JRE 8, and will complain if run in JDK.
+
+Some of the commands you will use:
+- To build: `mvn verify`
+  The resulting application is found in `target` as `hello-java.jar`.
+- To run: `java -jar hello-java.jar`
+
+Tasks:
+Part I - Manual stuff:
+1. Pull a maven docker image and manually build the application.
+2. Manually run the application.
+3. If you did not get full points - fix what you did wrong, until you do.
+
+Part II - Dockerfile:
+4. Build the application using maven image and a volume.
+5. Create a Dockerfile that include the application and runs it as the entrypoint.
+
+Part III - Multi-stage:
+6. Create a multi-stage Dockerfile that
+   a. Builds the application based on COPY of sources.
+   b. Creates an image which includes the app as its entry point.
+
+
+To hand-in
+----------
+A zipped file, named `<YOURNAME>-hello-java.zip`, containing a directory: `hello-java/` which should contain:
+- A script named `init-hello-java.sh` which builds the image (using your Dockerfile) and runs the container (using the image you just built) .
+- All the necessary files for `init-hello-java.sh` to work on any environment.
+
+
+Optional
+--------
+Docker Exercsie V2 wo (without) compose is an exercise for additional practice.

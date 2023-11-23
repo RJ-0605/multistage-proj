@@ -1,0 +1,3 @@
+FROM golang:1.10
+COPY app.go .
+RUN go build -o /app app.go CMD ["/app"]
