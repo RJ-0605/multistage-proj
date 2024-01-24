@@ -1,8 +1,8 @@
-Please start with the "Multistage Workshop", then continue with the "Hello Java" exercise.
+Multistage with Java 
 
 Hello Java Instructions
 =======================
-In this exercise you will practice some Java usage basics and create a multi-stage build.
+For this project i  will demonstrate some  Java usage basics and create a multi-stage build.
 
 hello-java is a simple program that writes to the console.
 In order to build it you will need the maven build tool and the Java Development Kit version 8 (JDK8). The official maven docker image has both.
@@ -29,7 +29,7 @@ Part III - Multi-stage:
    b. Creates an image which includes the app as its entry point.
 
 
-To hand-in
+Final Expectations of project
 ----------
 A zipped file, named `<YOURNAME>-hello-java.zip`, containing a directory: `hello-java/` which should contain:
 - A script named `init-hello-java.sh` which builds the image (using your Dockerfile) and runs the container (using the image you just built) .
